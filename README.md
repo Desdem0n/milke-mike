@@ -15,8 +15,14 @@ This site is built to be shared with employers, recruiters and future app or web
 
 ## Key links
 
+- Live portfolio: https://desdem0n.github.io/milke-mike/
+- GitHub repository: https://github.com/Desdem0n/milke-mike
 - GitHub repositories: https://github.com/Desdem0n?tab=repositories
 - MILKE project reference: https://milke.se/
+
+## Employer and client hook
+
+This portfolio is designed as a fast proof-of-fit: it shows polished visual production, working front-end interaction, multilingual presentation and a product idea in one place. It is intentionally shareable as a hiring profile and as a first contact page for future app or website clients.
 
 ## Local preview
 

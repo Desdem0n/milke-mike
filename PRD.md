@@ -14,6 +14,10 @@ Create a recruiter-ready, client-ready portfolio that positions Michal Milke as 
 
 Michal can make digital products feel real before they exist, using strong visual composition, technical front-end execution and clear product thinking.
 
+## Positioning Hook
+
+The portfolio should make a hiring manager think: this is not only a renderer and not only a junior front-end builder, but someone who can turn visual judgment into a working digital product. For future clients, it should suggest that Michal can shape a product story, present it clearly and make it usable enough to discuss, test and sell.
+
 ## Current Feature Set
 
 - Full-screen looping hero video optimized as web MP4.
@@ -53,6 +57,6 @@ Michal can make digital products feel real before they exist, using strong visua
 
 GitHub repository: `Desdem0n/milke-mike`
 
-Recommended public URL after GitHub Pages is enabled:
+Public portfolio URL:
 
 `https://desdem0n.github.io/milke-mike/`
