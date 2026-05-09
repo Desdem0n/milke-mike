@@ -7,6 +7,7 @@ const stickyCanvas = document.querySelector("[data-sticky-canvas]");
 const stickyNotes = document.querySelectorAll("[data-note-id]");
 const languageButtons = document.querySelectorAll("[data-lang]");
 const languageSwitcher = document.querySelector("[data-language-switcher]");
+const contactForm = document.querySelector("[data-gmail-form]");
 const supportedLanguages = new Set(["en", "pl"]);
 
 const translations = {
@@ -314,7 +315,7 @@ Object.assign(translations.pl, {
   "Collaboration": "Współpraca",
   "Other": "Inne",
   "Message": "Wiadomość",
-  "Sending opens your email app with the message addressed to desmilke@gmail.com.": "Wysyłka otworzy aplikację pocztową z wiadomością zaadresowaną do desmilke@gmail.com.",
+  "Sending opens Gmail with a prepared message addressed to desmilke@gmail.com.": "Wysyłka otworzy Gmaila z przygotowaną wiadomością zaadresowaną do desmilke@gmail.com.",
   "Send inquiry": "Wyślij zapytanie"
 });
 
@@ -417,6 +418,47 @@ document.addEventListener("click", (event) => {
   if (!languageSwitcher || languageSwitcher.contains(event.target)) return;
   languageSwitcher.classList.remove("is-open");
 });
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(contactForm);
+    const name = formData.get("Name") || "";
+    const email = formData.get("Email") || "";
+    const company = formData.get("Company or role") || "";
+    const type = formData.get("Type of message") || "Portfolio inquiry";
+    const message = formData.get("Message") || "";
+    const subject = `Portfolio inquiry: ${type} from ${name}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Company / role: ${company || "-"}`,
+      `Type of message: ${type}`,
+      "",
+      "Message:",
+      message
+    ].join("\n");
+    const gmailUrl = new URL("https://mail.google.com/mail/");
+
+    gmailUrl.searchParams.set("view", "cm");
+    gmailUrl.searchParams.set("fs", "1");
+    gmailUrl.searchParams.set("to", "desmilke@gmail.com");
+    gmailUrl.searchParams.set("su", subject);
+    gmailUrl.searchParams.set("body", body);
+
+    const gmailWindow = window.open(gmailUrl.toString(), "_blank", "noopener");
+
+    if (!gmailWindow) {
+      window.location.href = gmailUrl.toString();
+    }
+  });
+}
 
 const updateHeader = () => {
   if (!header) return;

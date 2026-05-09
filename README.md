@@ -11,7 +11,7 @@ This site is built to be shared with employers, recruiters and future app or web
 - a Cheap Flight App concept,
 - multilingual interface support,
 - GitHub repository links,
-- a contact form routed to `desmilke@gmail.com`.
+- a contact form that opens Gmail with a prepared inquiry to `desmilke@gmail.com`.
 
 ## Key links
 
