@@ -26,7 +26,7 @@ The portfolio should make a hiring manager think: this is not only a renderer an
 - MILKE pack shot project card linking to https://milke.se/.
 - GitHub calls-to-action linking to https://github.com/Desdem0n?tab=repositories.
 - Cheap Flight App concept section with a route-first app flow.
-- Multilingual UI switcher: English, Polish, Russian, German.
+- Bilingual UI switcher: English and Polish.
 - Contact form routed to `desmilke@gmail.com` via mail client.
 - Draggable sticky-note canvas to show process thinking.
 

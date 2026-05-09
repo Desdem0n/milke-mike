@@ -7,6 +7,7 @@ const stickyCanvas = document.querySelector("[data-sticky-canvas]");
 const stickyNotes = document.querySelectorAll("[data-note-id]");
 const languageButtons = document.querySelectorAll("[data-lang]");
 const languageSwitcher = document.querySelector("[data-language-switcher]");
+const supportedLanguages = new Set(["en", "pl"]);
 
 const translations = {
   pl: {
@@ -377,22 +378,23 @@ translatableElements.forEach((element) => {
 });
 
 const setLanguage = (language) => {
-  const dictionary = translations[language] || {};
+  const activeLanguage = supportedLanguages.has(language) ? language : "en";
+  const dictionary = translations[activeLanguage] || {};
 
-  document.documentElement.lang = language;
+  document.documentElement.lang = activeLanguage;
 
   translatableElements.forEach((element) => {
     const source = element.dataset.i18nSource;
-    element.textContent = language === "en" ? source : dictionary[source] || source;
+    element.textContent = activeLanguage === "en" ? source : dictionary[source] || source;
   });
 
   languageButtons.forEach((button) => {
-    const isActive = button.dataset.lang === language;
+    const isActive = button.dataset.lang === activeLanguage;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  localStorage.setItem("portfolio-language", language);
+  localStorage.setItem("portfolio-language", activeLanguage);
 };
 
 languageButtons.forEach((button) => {
