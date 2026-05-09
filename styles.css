@@ -443,6 +443,28 @@ h2 {
   align-items: center;
 }
 
+.app-demo-link {
+  display: block;
+  color: inherit;
+  border-radius: 34px;
+}
+
+.app-demo-link:focus-visible {
+  outline: 3px solid rgba(143, 242, 223, 0.9);
+  outline-offset: 6px;
+}
+
+.app-demo-link .phone-mockup {
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.app-demo-link:hover .phone-mockup {
+  box-shadow: 0 38px 105px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+}
+
 .phone-mockup {
   min-height: 560px;
   padding: 24px;
