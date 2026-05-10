@@ -25,8 +25,8 @@ The portfolio should make a hiring manager think: this is not only a renderer an
 - Filterable project gallery.
 - MILKE pack shot project card linking to https://milke.se/.
 - GitHub calls-to-action linking to https://github.com/Desdem0n?tab=repositories.
-- Cheap Flight App concept section with a route-first app flow.
-- Clickable Cheap Flight App mockup linking to the FareScout GitHub repository: https://github.com/Desdem0n/farescout.
+- FareScout section with a route-first app flow and updated product logo.
+- Clickable FareScout mockup linking to the FareScout GitHub repository: https://github.com/Desdem0n/farescout.
 - Bilingual UI switcher: English and Polish.
 - Contact form opening Gmail compose with a prepared message to `desmilke@gmail.com`.
 - Draggable sticky-note canvas to show process thinking.
@@ -36,7 +36,7 @@ The portfolio should make a hiring manager think: this is not only a renderer an
 - Uses real past work instead of placeholder portfolio cards.
 - Combines visual production and code in one profile.
 - Communicates both artistic and product-building skills.
-- Makes app-creator capability visible through the Cheap Flight App concept.
+- Makes app-creator capability visible through the FareScout app section.
 
 ## Success Metrics
 
@@ -49,7 +49,7 @@ The portfolio should make a hiring manager think: this is not only a renderer an
 ## Roadmap
 
 1. Replace Gmail compose handoff with serverless form delivery.
-2. Add live app demos for Cheap Flight App and future tools.
+2. Add live app demos for FareScout and future tools.
 3. Add case-study pages for MILKE, STOW, warehouse visualization and interiors.
 4. Add performance optimization for large image assets.
 5. Add analytics for recruiter interaction patterns.

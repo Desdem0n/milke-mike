@@ -13,7 +13,7 @@ const supportedLanguages = new Set(["en", "pl"]);
 const translations = {
   pl: {
     "Work": "Prace",
-    "Cheap Flight App": "Cheap Flight App",
+    "FareScout": "FareScout",
     "Skills": "Umiejętności",
     "GitHub": "GitHub",
     "Contact": "Kontakt",
@@ -110,7 +110,7 @@ const translations = {
   },
   ru: {
     "Work": "Работы",
-    "Cheap Flight App": "Cheap Flight App",
+    "FareScout": "FareScout",
     "Skills": "Навыки",
     "GitHub": "GitHub",
     "Contact": "Контакт",
@@ -206,7 +206,7 @@ const translations = {
   },
   de: {
     "Work": "Arbeiten",
-    "Cheap Flight App": "Cheap Flight App",
+    "FareScout": "FareScout",
     "Skills": "Skills",
     "GitHub": "GitHub",
     "Contact": "Kontakt",

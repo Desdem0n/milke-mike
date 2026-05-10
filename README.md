@@ -8,7 +8,7 @@ This site is built to be shared with employers, recruiters and future app or web
 
 - selected 3D and campaign visuals,
 - a cinematic looping hero video,
-- a Cheap Flight App concept,
+- the FareScout flight-search app,
 - multilingual interface support,
 - GitHub repository links,
 - a contact form that opens Gmail with a prepared inquiry to `desmilke@gmail.com`.
