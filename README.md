@@ -18,6 +18,7 @@ This site is built to be shared with employers, recruiters and future app or web
 - Live portfolio: https://desdem0n.github.io/milke-mike/
 - GitHub repository: https://github.com/Desdem0n/milke-mike
 - GitHub repositories: https://github.com/Desdem0n?tab=repositories
+- FareScout live demo: https://farescout.onrender.com
 - FareScout app repository: https://github.com/Desdem0n/farescout
 - MILKE project reference: https://milke.se/
 
