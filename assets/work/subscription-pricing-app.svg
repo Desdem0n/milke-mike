@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Subscription pricing app thumbnail</title>
+  <desc id="desc">A purple pricing interface with monthly and yearly plan cards.</desc>
+  <defs>
+    <radialGradient id="bg" cx=".54" cy=".44" r=".78">
+      <stop offset="0" stop-color="#6a00d8"/>
+      <stop offset=".55" stop-color="#2a006d"/>
+      <stop offset="1" stop-color="#130033"/>
+    </radialGradient>
+    <linearGradient id="btn" x1="0" x2="1">
+      <stop offset="0" stop-color="#a034e0"/>
+      <stop offset="1" stop-color="#7c24d2"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="960" height="420" fill="url(#bg)"/>
+  <circle cx="470" cy="164" r="165" fill="#7f19ff" opacity=".22" filter="url(#glow)"/>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(208 107)">
+      <rect width="260" height="226" rx="4" fill="#28005b" opacity=".55" stroke="#a36ae2"/>
+      <text x="20" y="54" font-size="23" fill="#fff">Monthly</text>
+      <text x="21" y="73" font-size="17" fill="#fff">29,99 zl./month</text>
+      <text x="20" y="126" font-size="13" fill="#fff">+ Cancel anytime.</text>
+      <rect x="28" y="167" width="204" height="34" rx="17" fill="url(#btn)"/>
+      <text x="101" y="189" font-size="11" font-weight="800" letter-spacing="1.2" fill="#fff">CONTINUE</text>
+    </g>
+    <g transform="translate(512 107)">
+      <rect width="260" height="226" rx="4" fill="#28005b" opacity=".55" stroke="#a36ae2"/>
+      <text x="20" y="54" font-size="23" fill="#fff">Yearly</text>
+      <text x="21" y="73" font-size="17" fill="#fff">29,99 zl./month</text>
+      <rect x="28" y="167" width="204" height="34" rx="17" fill="url(#btn)"/>
+      <text x="101" y="189" font-size="11" font-weight="800" letter-spacing="1.2" fill="#fff">CONTINUE</text>
+    </g>
+  </g>
+</svg>
